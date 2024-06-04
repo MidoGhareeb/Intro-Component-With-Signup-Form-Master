@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import the main ccs style file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- the icon of the page -->
+    <link rel="icon" href="image/favicon-32x32.png">
+    <!-- the title of the page -->
+    <title>Intro Component With Signup Form Master</title>
+</head>
+<body>
+    <!-- the main container -->
+    <div class="container">
+        <!-- the left part of the page  -->
+        <div class="text">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+        <!--  the right part of the page with form -->
+        <div class="sign">
+            <!-- the box of the try free -->
+            <div class="tryFree">Try it free 7 days <span>then $20/mo. thereafter</span></div>
+            <div class="card">
+                <!-- the dorm of sign up -->
+                <form>
+                    <!-- the input of the field -->
+                    <!-- first name field -->
+                    <div class="inputes">
+                        <input type="text" placeholder="First Name" autocomplete="off" id="firstName">
+                        <img class="firstimg hide" src="image/icon-error.svg" >
+                        <label class="firstLabel hide" for="firstName">First Name cannot be empty</label></div>
+                        <!-- last name field -->
+                        <div class="inputes">
+                            <input type="text" placeholder="Last Name" autocomplete="off" id="lastName">
+                            <img class="lastimg hide" src="image/icon-error.svg" >
+                            <label class="lastLabel hide" for="lastName">Last Name cannot be empty</label>
+                        </div>
+                        <!-- email field -->
+                        <div class="inputes">
+                            <input type="text" placeholder="Email Address" autocomplete="off" id="email">
+                            <img class="emailimg hide" src="image/icon-error.svg" >
+                            <label class="emailLabel hide" for="email">Looks Like this is not an email</label>
+                        </div>
+                        <!-- password field -->
+                    <div class="inputes">
+                        <input type="password" placeholder="Password" autocomplete="off" id="pass">
+                        <img class="passimg hide" src="image/icon-error.svg" >
+                        <label class="passLabel hide" for="pass">Password cannot be empty</label>
+                    </div>
+                    <!-- the main button  -->
+                <button type="button" onclick="validation()">Claim your free trial</button>
+                <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- the link for the programmer -->
+    <div class="mentor">
+        Challenge by <a href="https://www.frontendmentor.io/home">Frontend Mentor.</a> Coded by <a href="https://www.frontendmentor.io/profile/MidoGhareeb">Mohamed Ghareeb.</a>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
